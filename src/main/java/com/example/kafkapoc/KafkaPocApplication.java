@@ -9,13 +9,13 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class KafkaPocApplication {
 	// injected from application.properties
-	@Value("${io.confluent.developer.config.topic.name}")
+	@Value("${topic.name}")
 	private String topicName;
 
-	@Value("${io.confluent.developer.config.topic.partitions}")
+	@Value("${topic.partitions}")
 	private int numPartitions;
 
-	@Value("${io.confluent.developer.config.topic.replicas}")
+	@Value("${topic.replicas}")
 	private int replicas;
 
 	@Bean

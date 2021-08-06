@@ -5,6 +5,7 @@
         </encoder>
     </appender>
     <logger name="org.apache.hc.client5.http" level="info"/>
+    <logger name="com.example.kafkapoc.services" level="info"/>
     <root level="INFO">
         <appender-ref ref="stdout"/>
     </root>
